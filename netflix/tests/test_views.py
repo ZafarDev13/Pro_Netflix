@@ -37,4 +37,3 @@ class TestMovieViewSet(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data[0]['imdb'], 5)
-        print(f"**********{data}")
