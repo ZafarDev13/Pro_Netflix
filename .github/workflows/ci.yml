@@ -6,7 +6,7 @@ jobs:
     services:
       postgres:
         image: postgres:14.1
-        environment:
+        env:
           - POSTGRES_DB=postgres
           - POSTGRES_USER=postgres
           - POSTGRES_PASSWORD=postgres
