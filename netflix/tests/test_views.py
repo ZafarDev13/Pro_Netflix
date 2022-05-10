@@ -1,6 +1,5 @@
 from django.test import TestCase, Client
-
-from netflix.models import Movie, Actor
+from netflix.models import Movie
 
 
 class TestMovieViewSet(TestCase):
