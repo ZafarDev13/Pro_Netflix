@@ -24,7 +24,5 @@ jobs:
         run: |
             pip install -r requirements.txt
             pip install -e .
-      - name: Run unit tests1
-          run: python -m pytest --import-mode=append tests/
       - name: Run Tests
         run: pytest
