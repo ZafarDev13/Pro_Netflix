@@ -14,7 +14,7 @@ jobs:
           - 5432:5432
     runs-on: ubuntu-latest
     env:
-      DJANGO_SETTINGS_MODULE: config.settings pytest.ini
+      DJANGO_SETTINGS_MODULE: config.settings
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
@@ -24,4 +24,4 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Run Tests
-        run: pytest
+        run: test
