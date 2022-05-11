@@ -13,8 +13,9 @@ jobs:
         ports:
           - 5432:5432
     runs-on: ubuntu-latest
-    env:
+    env: |
       DJANGO_SETTINGS_MODULE: config.settings
+      DJANGO_SETTINGS_MODULE: test.settings pytest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
