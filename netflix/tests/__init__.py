@@ -1,1 +1,1 @@
-from .test_views import TestMovieViewSet
+# from .test_views import TestMovieViewSet
